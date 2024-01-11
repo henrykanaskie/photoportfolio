@@ -35,34 +35,20 @@ a {
   padding: 5%;
 }
 
-.wrapper {
-  
-  background: #efefef;
-  box-shadow: 1px 1px 10px #999;
-  margin: auto;
-  text-align: center;
-  position: relative;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  width: auto;
-  padding-top: 5px;
-}
-.scrolls {
-  overflow-x: scroll;
-  overflow-y:hidden;
-  height: auto;
+
+div.scroll-container {
+  background-color: #555;
+  overflow: auto;
   white-space: nowrap;
+  padding: 10px;
 }
 
-.imageDiv img {
-  box-shadow: 1px 1px 10px #999;
-  margin: 2px;
-  cursor: pointer;
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  vertical-align: top;
-  max-height: 100%;
+div.scroll-container img {
+  padding: 10px;
+}
 
+.photo{
+  height: auto;
+  width: 100%;
 }
 
