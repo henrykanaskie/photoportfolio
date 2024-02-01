@@ -4,8 +4,8 @@ body {
 }
 .headercontainer {
   display: flex;
-  flex-grow: 1;
-  height: 40px;
+  /* flex-grow: 1; */
+  height: 150px;
   width: 100%;
   background-color: lightblue;
   align-items: center;
@@ -32,9 +32,8 @@ a {
   display: flex;
   justify-content: space-evenly;
   justify-content: right;
-  padding: 5%;
+  padding: 12px;
 }
-
 
 div.scroll-container {
   background-color: #555;
@@ -47,8 +46,18 @@ div.scroll-container img {
   padding: 10px;
 }
 
-.photo{
+.photo {
   height: auto;
   width: 25%;
 }
 
+.social-icon {
+  display: flex;
+  align-items: center;
+  padding:10px;
+  justify-content: space-between;
+  font-size: 22px;
+}
+#youtube-logo{
+  margin-right: 25px;
+}
