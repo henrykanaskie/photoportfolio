@@ -2,6 +2,10 @@ body {
   margin: auto;
   padding: 0px;
 }
+@font-face {
+  font-family: neue;
+  src: url(BebasNeue-Regular.ttf);
+}
 .headercontainer {
   display: flex;
   flex-grow: 1;
@@ -9,7 +13,7 @@ body {
   /* border: solid black 2px; */
   height: 274px;
   width: 100%;
-  background-color: lightblue;
+  background-color: pink;
   align-items: center;
   justify-content: center;
 }
@@ -38,12 +42,41 @@ body {
 .headeroptions{
   /* border: solid black 2px; */
   flex: 6vh;
+  position: relative;
   text-align: left;
   padding: 12px;
   padding-top: 50px;
+  margin-left: 60px;
+  align-items: center;
+  font-family: neue;
+  justify-content: space-evenly;
+  flex-grow:1;
 }
 
+.headeroptions li{
+  /* border: solid 1px black; */
+  font-size: 14px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.headeroptions li::after{
+  content: " ";
+  background: white;
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
 
+.headeroptions li:hover::after{
+  width: 100%;
+
+}
 .headerlogo {
   /* border: solid black 2px; */
   text-align: center;
@@ -71,7 +104,7 @@ a {
 }
 
 div.scroll-container {
-  /* border: solid black 2px; */
+  border: solid black 2px;
   background-color: #555;
   overflow: auto;
   white-space: nowrap;
